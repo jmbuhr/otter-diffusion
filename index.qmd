@@ -1,0 +1,28 @@
+---
+title: Stable diffusion
+format: html
+---
+
+# Stable diffusion
+
+(Otter) images generated with stable diffusion via <https://github.com/basujindal/stable-diffusion>
+
+
+```{python} 
+#| echo: false
+#| output: asis
+import glob
+
+def get_prompt(s):
+  x = s.split('/')[-2].replace('_', ' ')
+  return x
+
+path = './img/'
+files = glob.glob(path +'**/*.png', recursive=True)
+
+for f in files:
+  print(f"![{get_prompt(f)}]({f})\n\n")
+```
+
+
+
