@@ -7,6 +7,8 @@ format: html
 
 (Otter) images generated with stable diffusion via <https://github.com/basujindal/stable-diffusion>
 
+Prompts are in the image description (allthough truncated from the folder names, the missing part is "Digital art painting, artstation.")
+
 
 ```{python} 
 #| echo: false
